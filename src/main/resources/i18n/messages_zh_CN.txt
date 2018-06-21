@@ -1,0 +1,56 @@
+dynastech.common.usernanme =用户名
+dynastech.common.password =密码
+dynastech.common.RememberMe =记住密码
+dynastech.common.login =登录
+dynastech.common.welcome =欢迎来到智慧餐饮管理系统
+dynastech.common.login.title =请输入用户名和密码。
+dynastech.common.resource.console=系统管理
+dynastech.common.search=搜索
+dynastech.common.skin=切换风格
+dynastech.common.logout=退出
+dynastech.common.profile=个人资料
+dynastech.common.nav-header=导航栏
+dynastech.common.dashboard=首页
+dynastech.common.skin.classic=经典
+dynastech.common.skin.cerulean=天蓝色
+dynastech.common.skin.lumen=流明
+dynastech.common.skin.spacelab=太空
+dynastech.common.skin.united=热情
+dynastech.common.operation.fail=操作失败！
+dynastech.common.inner.error=内部错误！
+dynastech.common.operation.success=操作成功！
+dynastech.common.operation.repeat=数据重复！
+dynastech.common.error.vcode=验证码错误,请重试.
+dynastech.common.vcode.title=验证码
+
+dynastech.user.changePwd =修改密码
+dynastech.org.changeName =修改组织名
+
+role.roleName.notNull=角色名不能为空
+role.roleName.size=角色名不能超过100个字符
+role.resourceIds.select=请选择所拥有资源
+role.roleName.repetition=重复角色名,请重新输入
+role.desc.shoo.boss=老板
+
+error.parameter.error.knowledge=发现未能识别的参数，请重试！
+error.common.parameter.error=提交参数错误或不完整.
+error.common.version.error=数据版本号不一致错误.
+error.login.unknownAccount=用户名不存在
+error.login.invalid.password=密码错误
+error.login.mobile.and.vcode.null = 手机号和验证码不能为空.
+error.login.account.lock=帐户已锁定
+error.login.name.password.blank=用户名和密码不能为空
+error.login.excessive.attempts=登录错误次数过多，请10分钟后再重试！
+error.login.other=登录失败.
+error.400=参数提交错误！
+error.401=你的权限不足!
+error.404=页面失踪了！
+error.503=服务暂时不可用!
+
+
+
+
+
+
+
+

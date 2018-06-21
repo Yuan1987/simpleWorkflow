@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+	<classPathEntry
+		location="C:/Users/26371/.m2/repository/com/microsoft/sqlserver/sqljdbc4/4.0/sqljdbc4-4.0.jar" />
+
+	<!-- 容器模块数据库 -->
+	<context id="container">
+		<jdbcConnection driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+			connectionURL="jdbc:sqlserver://127.0.0.1;DatabaseName=cetc"
+			userId="sa" password="admin123" />
+		<javaModelGenerator targetPackage="com.dynastech.flow.entity"
+			targetProject="cetc" />
+		<sqlMapGenerator targetPackage="com.dynastech.flow.mapper"
+			targetProject="cetc" />
+		<javaClientGenerator targetPackage="com.dynastech.flow.mapper"
+			targetProject="cetc" type="XMLMAPPER" />
+			
+		<table schema="" tableName="F_identitylink" alias="il" enableSelectByExample="true" 
+			domainObjectName="Identitylink" 
+			>
+		</table>
+		
+	</context>
+
+</generatorConfiguration>

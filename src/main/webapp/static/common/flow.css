@@ -1,0 +1,52 @@
+.flow{
+	display: table;
+	width: 100%;
+}
+
+.mt-element-step .step-line .mt-step-col {
+	padding: 30px 0;
+	text-align: center;
+	display: table-cell;
+}
+
+.mt-element-step .step-line .done .mt-step-word {
+	color: #26C281 !important;
+	border-color: #26C281 !important;
+}
+
+.mt-element-step .step-line .active .mt-step-word {
+    color: #32c5d2!important;
+    border-color: #32c5d2!important;
+}
+
+.mt-element-step .step-line .mt-step-number {
+	font-size: 14px !important;
+	border-radius: 50% !important;
+	display: inline-block;
+	margin: auto auto 5px;
+	padding: 0px;
+	border: 3px solid #e5e5e5;
+	position: relative;
+	z-index: 5;
+	height: 60px;
+	line-height:60px;
+	vertical-align:middle;
+	width: 60px;
+	text-align: center;
+}
+
+.mt-element-step .step-line .mt-step-word {
+	font-size: 14px !important;
+	border-radius: 5px !important;
+	display: inline-block;
+	margin: auto auto 5px;
+	padding: 0px;
+	border: 3px solid #e5e5e5;
+	position: relative;
+	z-index: 5;
+	height: 60px;
+	line-height:60px;
+	vertical-align:middle;
+	width: 110px;
+	text-align: center;
+}

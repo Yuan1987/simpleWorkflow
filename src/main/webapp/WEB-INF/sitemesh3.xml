@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+ 	<mapping path="/**/**/*.html" exclue="true" />
+ 	<mapping path="/**/**/*.do" exclue="true" />
+	<mapping path="/home" decorator="/WEB-INF/decorators/mainDecorator.jsp" />
+	<mapping path="/system/**" decorator="/WEB-INF/decorators/mainDecorator.jsp" />
+	<mapping path="/model/**" decorator="/WEB-INF/decorators/mainDecorator.jsp" />
+    <mapping path="/unauthorized" exclue="true"/>
+	<mapping path="/login" exclue="true" />
+	<mapping path="/regist/**" exclue="true" />
+	<mapping path="/static/**" exclue="true" />
+</sitemesh>

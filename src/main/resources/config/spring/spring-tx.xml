@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+"
+default-lazy-init="false"
+>
+	<context:annotation-config />
+	<aop:aspectj-autoproxy />
+	
+	<context:component-scan base-package="com.dynastech,com.data">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+	<mvc:annotation-driven/>
+	
+	<mvc:resources mapping="/static/**" location="/static/" />
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.dynastech.base.filter.LocaleFilter" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:config/base.properties"></property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+
+	<bean id="springContext" class="com.dynastech.base.util.SpringUtils"></bean>
+
+	<bean id="fileService" class="com.dynastech.base.file.FileServiceImpl">
+		<property name="basePath" value="${application.file.basePath}"></property>
+		<property name="baseUrl" value="${application.file.baseUrl}"></property>
+	</bean>
+	
+	<!-- 文件配置 -->
+	<bean id="multipartResolver"  
+	    class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  	  
+	    <!-- 1024*1024*5=5242880 5M -->  
+	    <property name="maxUploadSize" value="52428800"/>  
+	</bean> 
+	
+		<!-- 配置国际化资源文件路径 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+		      <list>
+		        <value>i18n/messages </value>
+		      </list>
+		  </property>
+	</bean>
+	<!-- 基于Cookie的本地化解析器 -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+		<property name="cookieMaxAge" value="604800" />
+		<property name="defaultLocale" value="zh_CN" />
+		<property name="cookieName" value="Language"></property>
+	</bean>
+	
+	 <!-- 邮件发送器   -->    
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">    
+        <property name="host" value="${mail.host}" />   
+        <property name="username" value="${mail.username}" />    
+        <property name="password" value="${mail.password}" />    
+        <property name="defaultEncoding" value="UTF-8"></property>    
+        <property name="javaMailProperties">    
+            <props>    
+                <prop key="mail.smtp.auth">${mail.smtp.auth}</prop>    
+                <prop key="mail.smtp.timeout">${mail.smtp.timeout}</prop>    
+                <prop key="mail.smtp.port">${mail.smtp.port}</prop>    
+            </props>    
+        </property>    
+    </bean>    
+      
+    <bean id="simpleMailMessage" class="org.springframework.mail.SimpleMailMessage">  
+        <!-- 发件人email -->  
+        <property name="from" value="${mail.username}" />  
+    </bean>
+</beans>

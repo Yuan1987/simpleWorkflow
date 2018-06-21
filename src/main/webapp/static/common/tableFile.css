@@ -1,0 +1,27 @@
+.file{
+	padding: 0px !important;
+	/* max-width:400px;
+	min-width:200px; */
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tdDiv{
+	display:flex;
+	border-top: 1px solid #e7ecf1;
+}
+
+.tdDiv>span{
+	padding:8px 0px;
+}
+
+.tdDiv>span:FIRST-CHILD{
+	flex:1;
+	border-right: 1px solid #e7ecf1;
+	text-align: left;
+}
+
+.tdDiv>span:LAST-CHILD{
+	flex:4;
+	text-align: left;
+}

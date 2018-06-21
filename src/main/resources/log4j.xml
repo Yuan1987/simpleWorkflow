@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration>
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d{yyyy-MM-dd HH:mm:ss SSS\}] [%t] [%c] (%F\:%L) - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="logInfo" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="../logs/receive_date_log.log" />
+		 <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d{yyyy-MM-dd  HH:mm:ss SSS\}] [%t] %c{3\} - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="../logs/framework.log" />
+		<param name="Append" value="true" />  
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d{yyyy-MM-dd HH:mm:ss SSS\}] [%t] [%c] (%F\:%L) - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="DATABASE" class="com.dynastech.base.log.SystemJDBCAppender">
+		<param name="URL" value="jdbc\:sqlserver\://192.168.20.91\:1433;DatabaseName=CETC" />
+		<param name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<param name="user" value="sqladmin" />
+		<param name="password" value="2016@dongu" />
+		<param name="sql" value="INSERT INTO sys_LOG (id,userid,username,type,level,msg,createdTime) VALUES ('%X{id}',?,?,?,'%p',?,'%d{yyyy/MM/dd HH:mm:ss}')" />
+		<filter class="com.dynastech.base.log.DbLogFilter">
+			<param name="LevelMax" value="db" />
+			<param name="LevelMin" value="db" />
+		</filter>
+	</appender>
+
+    <!-- 配置spring的debug级别 -->
+	<logger name="org.springframework.web.servlet.DispatcherServlet" additivity="false">
+		<level value="debug" />
+	</logger>
+	
+	<logger name="org.springframework.scheduling">
+	    <level value="info" />
+	</logger>
+	
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="file" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="DATABASE" />
+	</root>
+</log4j:configuration> 

@@ -1,0 +1,242 @@
+ #系统
+icatering.rest.bean.CUSTOMERID_NONE= 商户id不存在 
+icatering.rest.bean.CUSTOMERID_IS_NOT_EXIT=传入的商户id不存在
+icatering.rest.bean.DATE_ERROR= 时间格式不正确 
+icatering.rest.bean.DATA_IS_EXISTS= 该数据已经存在 
+icatering.rest.bean.DATA_IS_TOO_OLD=该数据距离系统当前时间太晚,确认传入请修改参数,重试
+icatering.rest.bean.DATA_IS_OUT_OF_RULE=该数据结账时间超出系统规则,确认传入请修改参数,重试
+icatering.rest.bean.DATA_IS_EXISTS_BEST_VESION=数据存在更高版本
+icatering.rest.bean.DATA_IS_NOT_EXISTS_TO_THE_VESION =此版本号对应的数据不存在
+icatering.rest.bean.SAME_VESION_DATA_REPEAT_ACTION =相同版本的相同数据重复操作 
+icatering.rest.bean.DATA_IS_EXISTS_SAME_VESION =已经存在相同数据
+icatering.rest.bean.DATA_IS_INVALID=数据非法，已存在非法数据表中 
+ 
+icatering.rest.bean.OPERATION_SUCCESS=操作成功 
+ 
+icatering.rest.bean.OPERATION_ERROR=操作失败 
+	
+icatering.rest.bean.NONE_PAY_TYPE=付款方式为空 
+ 
+icatering.rest.bean.NONE_ORDER_SUB=销售明细为空 
+	
+icatering.rest.bean.REQUEST_INPUT_ERROR=参数格式错误 
+
+icatering.rest.bean.SEAT_IS_NOT_EXIT=座位信息不存在
+icatering.rest.bean.SEAT_IS_NOT_FREE=座位不在空闲状态
+
+#退菜
+icatering.rest.bean.BACKGOODS_CUSTOMERID_IS_NOT_NULL=退菜商户id为空
+icatering.rest.bean.BACKGOODS_CUSTOMERID_IS_TOO_LONG=退菜商户id超长
+icatering.rest.bean.CUSTOMERID_IS_NOT_NULL=商户ID不能为空
+icatering.rest.bean.CUSTOMERID_IS_TOO_LONG=商户ID超长（36位）
+icatering.rest.bean.BACKGOODS_CUSTOMERID_IS_NOT_NULL=退菜的商户ID不能为空 
+icatering.rest.bean.BACKGOODS_CUSTOMERID_IS_TOO_LONG=退菜的商户ID超长(36位)
+icatering.rest.bean.BACKGOODS_ORDERID_IS_NOT_NULL=退菜的销售单ID不能为空 
+icatering.rest.bean.BACKGOODS_ORDERID_IS_TOO_LONG=退菜的销售单号ID超长（36位）
+icatering.rest.bean.BACKGOODS_GOODSID_IS_NOT_NULL=退菜的菜品ID不能为空
+icatering.rest.bean.BACKGOODS_GOODSID_IS_TOO_LONG=退菜的菜品ID超长（36位）
+icatering.rest.bean.BACKGOODS_GOODSNAME_IS_NOT_NULL=退菜的菜品名称不能为空
+icatering.rest.bean.BACKGOODS_GOODSNAME_IS_TOO_LONG=退菜的菜品名称超长（200位）
+icatering.rest.bean.BACKGOODSNUM_IS_NOT_NULL=退菜的数量不能为空
+icatering.rest.bean.BACKGOODSNUM_IS_ERROR=退菜的数量不合法
+icatering.rest.bean.BACKGOODS_REASONID_IS_NOT_NULL=退菜的原因ID不能为空
+icatering.rest.bean.BACKGOODS_REASONID_IS_TOO_LONG=退菜的原因ID超长（36位）
+icatering.rest.bean.BACKGOODS_REASONNAME_IS_NOT_NULL=退菜的原因名称不能为空
+icatering.rest.bean.BACKGOODS_REASONNAME_IS_TOO_LONG=退菜的原因名称超长（200位）
+icatering.rest.bean.BACKGOODS_CRUSERID_IS_NOT_NULL=退菜的操作员ID超长（36位）
+icatering.rest.bean.BACKGOODS_CRUSERNAME_IS_TOO_LONG=退菜的操作员名称超长（200位）
+icatering.rest.bean.BACKGOODS_NOTE_IS_TOO_LONG=退菜的备注超长（250位）
+
+#上传菜品的
+
+icatering.rest.bean.GOODS_CUSTOMERID_IS_NOT_NULL=上传菜品的商户ID不能为空
+icatering.rest.bean.GOODS_CUSTOMERID_IS_TOO_LONG=上传菜品的商户ID超长（36位）
+icatering.rest.bean.GOODS_GOODSID_IS_NOT_NULL=上传菜品的菜品ID不能为空
+icatering.rest.bean.GOODSID_IS_TOO_LONG=上传菜品的菜品ID超长（36位）
+icatering.rest.bean.GOODSNAME_IS_NOT_NULL=上传菜品的菜品名称不能为空
+icatering.rest.bean.GOODSNAME_IS_TOO_LONG=上传菜品的菜品名称超长（200位）
+icatering.rest.bean.GOODSNAMEEN_IS_TOO_LONG=上传菜品的菜品英文名称超长（200位）
+icatering.rest.bean.GOODS_UNIT_IS_TOO_LONG=上传菜品的单位超长（20位）
+icatering.rest.bean.GOODS_TYPEID_IS_NOT_NULL=上传菜品的菜品大类Id不能为空
+icatering.rest.bean.GOODS_TYPEID_IS_TOO_LONG=上传菜品的菜品大类Id超长（36位）
+icatering.rest.bean.GOODS_TYPENAME_IS_NOT_NULL=上传菜品的菜品大类名称不能为空
+icatering.rest.bean.GOODS_TYPENAME_IS_TOO_LONG=上传菜品的菜品大类名称超长（200位）
+icatering.rest.bean.GOODS_SMALLTYPENAME_IS_NOT_NULL=上传菜品的菜品大类名称小能为空
+icatering.rest.bean.GOODS_SMALLTYPENAME_IS_TOO_LONG=上传菜品的菜品小类名称超长（200位）
+icatering.rest.bean.GOODS_SMALLTYPEID_IS_NOT_NULL=上传菜品的菜品小类Id不能为空
+icatering.rest.bean.GOODS_SMALLTYPEID_IS_TOO_LONG=上传菜品的菜品小类Id超长（36位）
+icatering.rest.bean.GOODS_SPELLCODE_IS_TOO_LONG=上传菜品的菜品拼音超长（200位）
+icatering.rest.bean.GOODS_SPELLCODE_IS_TOO_LONG=上传菜品的菜品备注超长（200位）
+icatering.rest.bean.GOODS_CRUSERID_IS_TOO_LONG=上传菜品的菜品上传操作员ID超长（36位）
+icatering.rest.bean.BACKGOODS_CRUSERNAME_IS_TOO_LONG=上传菜品的菜品上传操作员名称超长（200位）
+ 
+#主销售单的
+icatering.rest.bean.SALEORDER_VERSIONCODE_IS_NOT_NULL =主销售单的版本值不能为空
+icatering.rest.bean.SALEORDER_VERSIONCODE_IS_TOO_LONG =主销售单的版本值超长(50位)
+icatering.rest.bean.SALEORDER_VERSIONID_IS_NOT_NULL =主销售单的版本ID不能为空
+icatering.rest.bean.SALEORDER_VERSIONID_IS_TOO_LONG =主销售单的版本ID超长(36位)
+icatering.rest.bean.SALEORDER_CUSTOMERID_IS_NOT_NULL=主销售单的商户ID不能为空
+icatering.rest.bean.SALEORDER_CUSTOMERID_IS_TOO_LONG=主销售单的商户ID超长（36位）
+icatering.rest.bean.SALEORDER_ORDERID_IS_NOT_NULL=主销售单的ID不能为空
+icatering.rest.bean.SALEORDER_ORDERID_IS_TOO_LONG=主销售单的ID超长（36位）
+icatering.rest.bean.SALEORDER_SECTIONID_IS_NOT_NULL=主销售单的餐段ID不能为空
+icatering.rest.bean.SALEORDER_SECTIONID_IS_TOO_LONG=主销售单的餐段ID超长（36位）
+icatering.rest.bean.SALEORDER_PERSONS_IS_NOT_NULL=主销售单的人数不能为空
+icatering.rest.bean.SALEORDER_PERSONS_IS_TOO_LONG=主销售单的人数不合法
+icatering.rest.bean.SALEORDER_VIPCODEID_IS_TOO_LONG=主销售单的VIP卡号超长（36位）
+icatering.rest.bean.SALEORDER_SALESCODE_IS_TOO_LONG=主销售单的销售员ID超长（36位）
+icatering.rest.bean.SALEORDER_SALESNAME_IS_TOO_LONG=主销售销售员名称超长（200位）
+icatering.rest.bean.SALEORDER_PAYMENT_IS_NOT_NULL=主销售付款金额不能为空
+icatering.rest.bean.SALEORDER_PAYMENT_IS_TOO_LONG=主销售付款金额不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_SERVICERATE_IS_TOO_LONG=主销售服务费率不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_DISKON_IS_TOO_LONG=主销售整单折扣不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_SUREUSER_IS_TOO_LONG=主销售卖单操作员ID超长（36位）
+icatering.rest.bean.SALEORDER_SUREUSERNAME_IS_TOO_LONG=主销售卖单操作员名称超长（200位）
+icatering.rest.bean.SALEORDER_OVERUSER_IS_TOO_LONG=主销售结账操作员ID超长（36位）
+icatering.rest.bean.SALEORDER_OVERUSERNAME_IS_TOO_LONG=主销售结账操作员名称超长（200位）
+icatering.rest.bean.SALEORDER_OVERDATE_IS_NOT_NULL=主销售结账时间不能空
+icatering.rest.bean.SALEORDER_NOTE_IS_TOO_LONG=主销售备注超长（250位）
+icatering.rest.bean.SALEORDER_CRUSER_IS_TOO_LONG=主销售建立操作员ID超长（36位）
+icatering.rest.bean.SALEORDER_CRUSERNAME_IS_TOO_LONG=主销售建立操作员名称超长（200位）
+icatering.rest.bean.SALEORDER_FLAG_IS_TOO_LONG=主销售是否反结账超长(1位)
+icatering.rest.bean.SALEORDER_SUREWRITE_IS_TOO_LONG =是否写入超长，默认false；true为确认写入 (5位);
+icatering.rest.bean.SALEORDER_PRIMECOST_IS_NOT_NULL =原价金额不能为空
+icatering.rest.bean.SALEORDER_PRIMECOST_IS_TOO_LONG =原价金额不合法(最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_DISKON_IS_NOT_NULL =拆扣率不能为空
+icatering.rest.bean.SALEORDER_REDUCEPRICE_IS_NOT_NULL =优惠金额不能为空
+icatering.rest.bean.SALEORDER_REDUCEPRICE_IS_TOO_LONG =优惠金额不合法(最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_WIPEPRICE_IS_NOT_NULL =抹零金额不能为空
+icatering.rest.bean.SALEORDER_WIPEPRICE_IS_TOO_LONG =抹零金额不合法(最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_OTHERPRICE_IS_TOO_LONG =其他费用不合法(最长18位，小数保留2位）
+icatering.rest.bean.SALEORDER_OTHERPRICENOTE_IS_TOO_LONG =其他费用说明超长(500位)
+
+
+
+//销售单明细
+icatering.rest.bean.SALEORDERSUB_VERSION_IS_NOT_NULL=销售单明细的版本不能为空
+icatering.rest.bean.String SALEORDERSUB_VERSION_IS_TOO_LONG =销售单明细的版本超长(50位)
+icatering.rest.bean.SALEORDERSUB_CUSTOMERID_IS_NOT_NULL=销售单明细的商户ID不能为空
+icatering.rest.bean.SALEORDERSUB_CUSTOMERID_IS_TOO_LONG=销售单明细的商户ID超长（36位）
+icatering.rest.bean.SALEORDERSUB_ORDERID_IS_NOT_NULL=销售单明细的销售单号不能为空
+icatering.rest.bean.SALEORDERSUB_ORDERID_IS_TOO_LONG=销售单明细的销售单号超长（36位）
+icatering.rest.bean.SALEORDERSUB_GOODSID_IS_NOT_NULL=销售单明细的菜品编号不能为空
+icatering.rest.bean.SALEORDERSUB_GOODSID_IS_TOO_LONG=销售单明细的菜品编号超长（36位）
+icatering.rest.bean.SALEORDERSUB_GOODSNAME_IS_NOT_NULL=销售单明细的菜品名称不能为空
+icatering.rest.bean.SALEORDERSUB_GOODSNAME_IS_TOO_LONG=销售单明细的菜品名称超长（200位）
+icatering.rest.bean.SALEORDERSUB_GOODSNAMEEN_IS_TOO_LONG=销售单明细的菜品英文名称超长（200位）
+icatering.rest.bean.SALEORDERSUB_PGOODSID_IS_TOO_LONG=销售单明细的套餐编号超长（36位）
+icatering.rest.bean.SALEORDERSUB_PGOODSIDNAME_IS_TOO_LONG=销售单明细的套餐名称超长（200位）
+icatering.rest.bean.SALEORDERSUB_TYPEID_IS_NOT_NULL=销售单明细的菜品大类ID不能为空
+icatering.rest.bean.SALEORDERSUB_TYPEID_IS_TOO_LONG=销售单明细的菜品大类ID（36位）
+icatering.rest.bean.SALEORDERSUB_TYPENAME_IS_NOT_NULL=销售单明细的菜品大类名称不能为空
+icatering.rest.bean.SALEORDERSUB_TYPENAME_IS_TOO_LONG=销售单明细的菜品大类名称（200位）
+icatering.rest.bean.SALEORDERSUB_SMALLTYPEID_IS_NOT_NULL=销售单明细的菜品小类ID不能为空
+icatering.rest.bean.SALEORDERSUB_SMALLTYPEID_IS_TOO_LONG=销售单明细的细菜品小类ID（36位）
+icatering.rest.bean.SALEORDERSUB_SMALLTYPENAME_IS_NOT_NULL=销售单明细的菜品小类名称不能为空
+icatering.rest.bean.SALEORDERSUB_SMALLTYPENAME_IS_TOO_LONG=销售单明细的菜品小类名称（200位）
+icatering.rest.bean.SALEORDERSUB_TABLEID_IS_NOT_NULL=销售单明细的餐桌号不能为空
+icatering.rest.bean.SALEORDERSUB_TABLEID_IS_TOO_LONG=销售单明细的餐桌编号（36位）
+icatering.rest.bean.SALEORDERSUB_UNIT_IS_TOO_LONG=销售单明细的单位（20位）
+icatering.rest.bean.SALEORDERSUB_EXPRICE_IS_TOO_LONG=销售单明细的附加价不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEORDERSUB_COSTPRICE_IS_NOT_NULL=销售单明细的原价不能为空
+icatering.rest.bean.SALEORDERSUB_COSTPRICE_IS_TOO_LONG=销售单明细的原价不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEORDERSUB_PRICE_IS_NOT_NULL=销售单明细的卖假不能为空
+icatering.rest.bean.SALEORDERSUB_PRICE_IS_TOO_LONG=销售单明细的卖价不合法
+icatering.rest.bean.SALEORDERSUB_DISCOUNT_IS_NOT_NULL=销售单明细的折扣不能为空
+icatering.rest.bean.SALEORDERSUB_DISCOUNT_IS_TOO_LONG=销售单明细的折扣不合法（最长1位，小数保留2位）
+icatering.rest.bean.SALEORDERSUB_OTHERCHARGES_IS_TOO_LONG=销售单明细的其他费用不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEORDERSUB_NUM_IS_NOT_NULL=销售单明细的数量不能为空
+icatering.rest.bean.SALEORDERSUB_NUM_IS_TOO_LONG=销售单明细的数量不合法(最长10位，小数保留3位)
+icatering.rest.bean.SALEORDERSUB_METHODID_IS_TOO_LONG=销售单明细的菜品做法ID（36位）
+icatering.rest.bean.SALEORDERSUB_METHODNAME_IS_TOO_LONG=销售单明细的菜品做法名称（200位）
+icatering.rest.bean.SALEORDERSUB_FLAVORID_IS_TOO_LONG=销售单明细的菜品口味ID（36位）
+icatering.rest.bean.SALEORDERSUB_FLAVORNAME_IS_TOO_LONG=销售单明细的菜品口味名称（200位）
+icatering.rest.bean.SALEORDERSUB_REQUESTID_IS_TOO_LONG=销售单明细的其他要求ID（36位）
+icatering.rest.bean.SALEORDERSUB_REQUESTNAME_IS_TOO_LONG=销售单明细的其他要求名称（200位）
+icatering.rest.bean.SALEORDERSUB_ORDUSER_IS_TOO_LONG=销售单明细的操作员ID（36位）
+icatering.rest.bean.SALEORDERSUB_ORDUSERNAME_IS_TOO_LONG=销售单明细的操作员名称（200位）
+icatering.rest.bean.SALEORDERSUB_ORDTIME_IS_NOT_NULL=销售单明细的操作时间不能空
+icatering.rest.bean.SALEORDERSUB_FLAG_IS_TOO_LONG=销售单明细的是否反结账超长（1位）
+
+//支付方式的
+icatering.rest.bean.SALEPAY_VERSION_IS_NOT_NULL =支付方式的版本不能为空 
+icatering.rest.bean.SALEPAY_VERSION_IS_TOO_LONG =支付方式的版本号超长(50位)
+icatering.rest.bean.SALEPAY_CUSTOMERID_IS_NOT_NULL=支付方式的商户ID不能为空
+icatering.rest.bean.SALEPAY_CUSTOMERID_IS_TOO_LONG=支付方式的商户ID超长（36位）
+icatering.rest.bean.SALEPAY_AMT_IS_TOO_LONG=支付方式的付款金额不合法（最长18位，小数保留2位）
+icatering.rest.bean.SALEPAY_AMT_IS_NOT_NULL=支付方式的付款金额不能为空
+icatering.rest.bean.SALEPAY_ORDERID_IS_NOT_NULL=支付方式的销售单号不能为空
+icatering.rest.bean.SALEPAY_ORDERID_IS_TOO_LONG=支付方式的销售单号超长（36位）
+icatering.rest.bean.SALEPAY_PAYID_IS_NOT_NULL=支付方式的付款方式ID不能为空
+icatering.rest.bean.SALEPAY_PAYID_IS_TOO_LONG=支付方式的付款方式ID超长（36位）
+icatering.rest.bean.SALEPAY_PAYNAME_IS_NOT_NULL=支付方式的付款方式名称不能为空
+icatering.rest.bean.SALEPAY_PAYNAME_IS_TOO_LONG=支付方式的付款方式名称超长（200位）
+icatering.rest.bean.SALEPAY_PAYTIME_IS_NOT_NULL =支付方式的支付时间不能为空
+icatering.rest.bean.SALEPAY_FLAG_IS_TOO_LONG =销售单明细的是否反结账超长（1位)
+
+//餐段的
+icatering.rest.bean.SALESECTION_CUSTOMERID_IS_NOT_NULL=餐段的商户ID不能为空
+icatering.rest.bean.SALESECTION_CUSTOMERID_IS_TOO_LONG=餐段的商户ID超长（36位）
+icatering.rest.bean.SALESECTION_SID_IS_NOT_NULL=餐段的餐段不能为空
+icatering.rest.bean.SALESECTION_SID_IS_TOO_LONG=餐段的餐段超长（36位）
+icatering.rest.bean.SALESECTION_SNAME_IS_NOT_NULL=餐段的餐段名称不能为空
+icatering.rest.bean.SALESECTION_SNAME_IS_TOO_LONG=餐段的名称超长（200位）
+icatering.rest.bean.SALESECTION_NOTE_IS_TOO_LONG=餐段的备注超长（250位）
+icatering.rest.bean.SALESECTION_CRUSER_IS_TOO_LONG=餐段的操作员ID（36位）
+
+//餐桌
+icatering.rest.bean.SALETABLE_CUSTOMERID_IS_NOT_NULL=餐桌的商户ID不能为空
+icatering.rest.bean.SALETABLE_CUSTOMERID_IS_TOO_LONG=餐桌的商户ID超长（36位）
+icatering.rest.bean.SALETABLE_TABLEID_IS_NOT_NULL=餐桌的餐桌编号不能为空
+icatering.rest.bean.SALETABLE_TABLEID_IS_TOO_LONG=餐桌的餐桌编号超长（36位）
+icatering.rest.bean.SALETABLE_TABLENAME_IS_NOT_NULL=餐桌的餐桌名称不能为空
+icatering.rest.bean.SALETABLE_TABLENAME_IS_TOO_LONG=餐桌的餐桌名称超长（200位）
+icatering.rest.bean.SALETABLE_AREAID_IS_NOT_NULL=餐桌的区域编号不能为空
+icatering.rest.bean.SALETABLE_AREAID_IS_TOO_LONG=餐桌的区域编号超长（36位）
+icatering.rest.bean.SALETABLE_AREANAME_IS_NOT_NULL=餐桌的区域名称不能为空
+icatering.rest.bean.SALETABLE_AREANAME_IS_TOO_LONG=餐桌的区域名称超长（200位）
+icatering.rest.bean.SALETABLE_TYPEID_IS_NOT_NULL=餐桌的类型编号不能为空
+icatering.rest.bean.SALETABLE_TYPEID_IS_TOO_LONG=餐桌的类型编号超长（36位）
+icatering.rest.bean.SALETABLE_TYPENAME_IS_NOT_NULL=餐桌的类型名称不能为空
+icatering.rest.bean.SALETABLE_TYPENAME_IS_TOO_LONG=餐桌的类型名称超长（200位）
+icatering.rest.bean.SALEPAY_LOCKUSER_IS_TOO_LONG=餐桌的当前操作员编号超长（36位）
+icatering.rest.bean.SALETABLE_LOCKUSERNAME_IS_TOO_LONG=餐桌的当前操作员名称超长（200位）
+icatering.rest.bean.SALETABLE_NOTE_IS_TOO_LONG=餐桌的备注超长（250位）
+
+//返单原因
+icatering.rest.bean.RETURN_SALEORDER_NOTE_IS_NOT_NULL =返单原因不能为空
+icatering.rest.bean.RETURN_SALEORDER_NOTE_IS_TOO_LONG =返单原因超长(250位)
+icatering.rest.bean.SALEORDER_OVERUSER_IS_NOT_NULL=销售单结账操作员ID不能为空
+icatering.rest.bean.SALEORDER_OVERUSERNAME_IS_NOT_NULL=销售单结账操作员姓名不能为空
+
+icatering.rest.bean.SALEORDER_STATUS_IS_NOT_NULL=订单状态不能为空
+icatering.rest.bean.SALEORDER_STATUS_IS_TOO_LONG=订单状态超长(10位)
+
+ 
+icatering.rest.bean.SALEORDER_TABLEID_IS_NOT_NULL =桌子ID不能为空
+icatering.rest.bean.SALEORDER_TABLEID_IS_TOO_LONG =桌子ID超长36位
+	
+icatering.rest.bean.SALEORDER_TABLENAME_IS_NOT_NULL =桌子名称不能为空;
+icatering.rest.bean.SALEORDER_TABLENAME_IS_TOO_LONG =桌子名称超长(100位)
+
+icatering.rest.bean.SALEORDER_SEATID_IS_NOT_NULL =座位ID不能为空
+icatering.rest.bean.SALEORDER_SEATID_IS_TOO_LONG =座位ID超长(36位)
+
+icatering.rest.bean.SALEORDER_SEATNAME_IS_NOT_NULL =座位名称不能为空
+icatering.rest.bean.SALEORDER_SEATNAME_IS_TOO_LONG =座位名称太长（50位）
+
+icatering.rest.bean.SALEORDER_BUYTIME_IS_NOT_NULL =下单时间不能为空
+
+icatering.rest.bean.SALEORDER_USERID_IS_NOT_NULL =购买者ID不能为空
+icatering.rest.bean.SALEORDER_USERID_IS_TOO_LONG =购买者ID超长(36位)
+
+icatering.rest.bean.SALEORDER_USERNAME_IS_NOT_NULL =购买者名称不能为空
+icatering.rest.bean.SALEORDER_USERNAME_IS_TOO_LONG =购买者名称超长(50位)
+
+icatering.rest.bean.SALEORDER_BESPEAKTIME_IS_NOT_NULL=预约时间不能为空
+ 
+icatering.rest.bean.SALEORDER_IS_NOT_EXIT=订单信息不存在
+icatering.rest.bean.SALEORDER_IS_EXIT=订单信息已经存在
+
+icatering.rest.bean.SALEORDER_IS_NOT_CANCEL_STATUS=订单当前状态不可取消
+	

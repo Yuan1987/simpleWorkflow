@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+	<classPathEntry
+		location="C:/Users/26371/.m2/repository/com/oracle/ojdbc14/10.2.0.4.0/ojdbc14-10.2.0.4.0.jar" />
+
+	<!-- 容器模块数据库 -->
+	<context id="container">
+		<jdbcConnection driverClass="oracle.jdbc.OracleDriver"
+			connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+			userId="yuan" password="yuan" />
+		<javaModelGenerator targetPackage="com.data.model.entity"
+			targetProject="cetc" />
+		<sqlMapGenerator targetPackage="com.data.model.mapper"
+			targetProject="cetc" />
+		<javaClientGenerator targetPackage="com.data.model.mapper"
+			targetProject="cetc" type="XMLMAPPER" />
+			
+		<table schema="" tableName="V_USER_POST_INFO" alias="vi" enableSelectByExample="true" 
+			domainObjectName="VUserPostInfo" 
+			enableInsert="false"
+			enableDeleteByExample="false"
+			enableUpdateByExample="false"
+			enableUpdateByPrimaryKey="false"
+			enableDeleteByPrimaryKey="false"
+			>
+		</table>
+		
+	</context>
+
+</generatorConfiguration>
